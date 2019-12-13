@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:id="@+id/guide_info_rl"
+            android:layout_width="351dp"
+            android:layout_height="43dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/guide_background">
+
+            <TextView
+                android:id="@+id/guide_name"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text = "David Kim"
+                android:textSize="17dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/guide_city"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:text = "France"
+                android:textSize="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/guide_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="경험 추구 여행자"
+            android:textSize="17dp"
+            android:layout_below="@+id/guide_info_rl"
+            android:layout_alignRight="@+id/guide_info_rl"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+</LinearLayout>
